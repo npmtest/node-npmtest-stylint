@@ -1,1 +1,40 @@
-{     "devDependencies": {         "stylint": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-stylint",     "homepage": "https://github.com/npmtest/node-npmtest-stylint",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-stylint.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "test coverage for [stylint (v1.5.9)](https://github.com/SimenB/stylint#readme) [![npm package](https://img.shields.io/npm/v/npmtest-stylint.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-stylint) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-stylint.svg)](https://travis-ci.org/npmtest/node-npmtest-stylint)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "stylint": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-stylint",
+    "keywords": [
+        "coverage",
+        "test",
+        "stylint"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_stylint.js",
+    "name": "npmtest-stylint",
+    "nameAlias": "npmtest_stylint",
+    "nameOriginal": "npmtest-stylint",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-stylint.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
