@@ -1,4 +1,7 @@
-# test coverage for  [stylint (v1.5.9)](https://github.com/SimenB/stylint#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-stylint.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-stylint) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-stylint.svg)](https://travis-ci.org/npmtest/node-npmtest-stylint)
+# npmtest-stylint
+
+#### basic test coverage for  [stylint (v1.5.9)](https://github.com/SimenB/stylint#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-stylint.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-stylint) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-stylint.svg)](https://travis-ci.org/npmtest/node-npmtest-stylint)
+
 #### A linter for stylus
 
 [![NPM](https://nodei.co/npm/stylint.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/stylint)
